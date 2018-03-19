@@ -1,0 +1,7 @@
+[push]
+	default = simple
+[alias]
+    up = pull --rebase
+    prup = "!f() { git pull origin pull/$1/head; } ; f"
+    pr = "!f() { git fetch origin pull/$1/head:pr/$1; git checkout pr/$1; } ; f"
+
